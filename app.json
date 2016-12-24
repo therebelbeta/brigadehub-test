@@ -11,14 +11,7 @@
     }
   ],
   "env": {
-    "GITHUB_ID": {
-            "description": "This is a Github Client ID. Refer to http://example.com to register.",
-            "value": ""
-    },
-    "GITHUB_SECRET": {
-            "description": "This is a Github Client ID. Refer to http://example.com to register.",
-            "value": ""
-    }
+    "NODE_ENV": "production"
   },
   "scripts": {
     "postdeploy": "make db/bootstrap"
