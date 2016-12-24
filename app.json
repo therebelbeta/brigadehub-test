@@ -1,0 +1,26 @@
+{
+  "name": "brigadehub-test",
+  "description": "Brigadehub",
+  "website": "http://brigadehub.github.io",
+  "success_url": "/login",
+  "addons": [
+    "papertrail",
+   {
+      "plan": "mongolab",
+      "as": "MONGODB"
+    }
+  ],
+  "env": {
+    "GITHUB_ID": {
+            "description": "This is a Github Client ID. Refer to http://example.com to register.",
+            "value": ""
+    },
+    "GITHUB_SECRET": {
+            "description": "This is a Github Client ID. Refer to http://example.com to register.",
+            "value": ""
+    }
+  },
+  "scripts": {
+    "postdeploy": "make db/bootstrap"
+  }
+}
